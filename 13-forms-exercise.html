@@ -1,0 +1,53 @@
+<form method="POST" action="https://api.dev-master.ninja/html/form">
+    <input type="hidden" name="id" value="this is a hidden ID">
+    <fieldset>
+        <legend>Course Information:</legend>
+        Code: <input type="text" name="code" value="">  <br>
+        
+        Do you like HTML?
+
+        <select name="YouLikeHTML">
+            <option disabled selected>-- Choose one --</option>
+            <optgroup label="Francais">
+                <option value="fr-BE">Belgique</option>
+                <option value="fr-FR">France</option>
+            </optgroup>
+            <optgroup label="Nederland">
+                <option value="nl-BE">Belgie</option>
+                <option value="nl-NL">Nederland</option>
+            </optgroup>
+            <option value="en-EN">English</option>
+        </select>
+    </fieldset>
+
+    <br>
+
+    Your comments: <br>
+    <textarea name="comments" rows="5" cols="60"></textarea> <br> <br>
+
+    Your Score: <br>
+    <input type="radio" name="score" value="10">10
+    <input type="radio" name="score" value="20">20
+    <input type="radio" name="score" value="30" checked>30
+    <input type="radio" name="score" value="40">40
+    <input type="radio" name="score" value="50">50
+
+    <br> <br>
+
+    Food: <br>
+    <input type="checkbox" name="food1" value="Spaghetti">I like spaghetti <br>
+    <input type="checkbox" name="food2" value="Bread">I like bread <br>
+    <input type="checkbox" name="food3" value="Chicken" checked>I don't like chicken <br>
+
+    <br> <br>
+
+    Your age:
+    <input
+        type="range"
+        name="age"
+        min="1" max="100" value="25"> <br> <br>
+    <input
+        type="submit"
+        name="thebutton"
+        value="Save!">
+</form>
